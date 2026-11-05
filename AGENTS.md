@@ -24,6 +24,7 @@ Done means all of these, with evidence in the PR:
 
 ## Git and GitHub
 - Work on a `feat/`, `fix/` or `chore/` branch, never on main. Conventional commits. Small PRs that do one thing.
+- In cloud sessions, use the assigned branch.
 - Commit and push after each working step, so I can follow along and no work is lost.
 - Never use `--no-verify`. When a hook fails, fix the cause.
 - You may do anything on GitHub except delete repos. Your work ends at an open, green PR: I merge, tag, release and deploy.
