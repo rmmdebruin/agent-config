@@ -11,7 +11,7 @@
     "failIfUnavailable": true,
     "allowUnsandboxedCommands": false,
     "excludedCommands": ["gh *"],
-    "filesystem": { "denyRead": ["~/"], "allowRead": ["."] },
+    "filesystem": { "denyRead": ["~/"], "allowRead": [".", "~/.gitconfig", "~/.config/git", "~/.local/share/uv", "~/.local/bin"] },
     "network": { "allowedDomains": ["pypi.org", "files.pythonhosted.org", "github.com", "*.github.com", "*.githubusercontent.com", "registry.npmjs.org"] }
   },
   "env": {
