@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "auto",
+    "blockWritesOutsideWorkingDirectories": true,
+    "blockReadsOutsideWorkingDirectories": true,
+    "deny": ["Bash(docker *)", "mcp__terminal__run_in_terminal", "mcp__computer-use"]
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false,
+    "excludedCommands": ["gh *"],
+    "filesystem": { "denyRead": ["~/"], "allowRead": ["."] },
+    "network": { "allowedDomains": ["pypi.org", "files.pythonhosted.org", "github.com", "*.github.com", "*.githubusercontent.com", "registry.npmjs.org"] }
+  },
+  "env": {
+    "UV_CACHE_DIR": "/tmp/claude/uv-cache",
+    "npm_config_cache": "/tmp/claude/npm-cache",
+    "npm_config_store_dir": "/tmp/claude/pnpm-store"
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  }
+}
